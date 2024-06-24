@@ -1,2 +1,10 @@
 <h1>Now we will be learning about angular performance enchancing</h1>
-<img ngSrc="favicon.ico" width="400" height="200">
+@defer (on timer(4000ms)) {
+ <app-sec></app-sec>
+}
+@placeholder {
+    <app-default></app-default>
+}
+@loading (after 4s;) {
+    <app-loading></app-loading>
+}
