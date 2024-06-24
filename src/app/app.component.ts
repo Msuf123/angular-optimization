@@ -14,4 +14,8 @@ import { DefaultComponent } from './default/default.component';
 })
 export class AppComponent {
   title = 'opti';
+  val=false
+  setVal(){
+    this.val=!this.val
+  }
 }
